@@ -10,29 +10,28 @@
 dom2 <br>
 
 <span id="box1"></span><br>
-<input type="text" id="dom2"><br><br>
+<input type="text" id="dom1"><br><br>
 
 <span id="box2"></span> <br>
-<input type="text" id="dom"><br>
+<input type="text" id="dom2"><br>
 
-<button onclick="repot()" id="save">data save</button>
+<button  onclick="repot(),ok()" id="save">data save</button>
 
    <script>
 
-   function repot(){
-    let x = document.getElementById('dom2').value
+   function ok(){
+    let x = document.getElementById('dom1').value
     console.log(x);
     document.getElementById('box1').innerText= x
 }
 
 function repot(){
-    let x = document.getElementById('dom').value
+    let x = document.getElementById('dom2').value
     console.log(x);
     document.getElementById('box2').innerText= x
 }
 
 //data save//
-
 
 
 document.getElementById('save').addEventListener('click',
