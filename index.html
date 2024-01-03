@@ -8,20 +8,32 @@
 <body>
 
 dom2 <br>
+
+<span id="box1"></span><br>
 <input type="text" id="dom2"><br><br>
 
+<span id="box2"></span> <br>
 <input type="text" id="dom"><br>
-<button id="save">data save</button>
+
+<button onclick="repot()" id="save">data save</button>
 
    <script>
 
-//    function repot(){
-//     let x = document.getElementById('to').value
-//     console.log(x);
-//     document.getElementById('demo').innerText= x
-// }
+   function repot(){
+    let x = document.getElementById('dom2').value
+    console.log(x);
+    document.getElementById('box1').innerText= x
+}
+
+function repot(){
+    let x = document.getElementById('dom').value
+    console.log(x);
+    document.getElementById('box2').innerText= x
+}
 
 //data save//
+
+
 
 document.getElementById('save').addEventListener('click',
 function(){ 
