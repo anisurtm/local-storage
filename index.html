@@ -15,7 +15,7 @@ dom2 <br>
 <span id="box2"></span> <br>
 <input type="text" id="dom2"><br>
 
-<button  onclick="repot(),ok()" id="save">data save</button>
+<button id="save">data save</button>
 
    <script>
 
@@ -36,7 +36,7 @@ function repot(){
 
 document.getElementById('save').addEventListener('click',
 function(){ 
-  const s= document.getElementById('dom').value;
+  const s= document.getElementById('dom1').value;
  
   localStorage[document.getElementById('dom2').value]=s;
 })
