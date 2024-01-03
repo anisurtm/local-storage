@@ -6,27 +6,30 @@
     <title>Document</title>
 </head>
 <body>
-   
-    <button onclick="console.log('rahman'),document.getElementById('result').innerText= 'md'">ok</button>
-  <span class="look"></span>
-    <span id="result"></span>
 
-    <br><br>
-    <input id="oko" type="text">
+dom2 <br>
+<input type="text" id="dom2"><br><br>
 
-    <script>
-const o = document.getElementById("oko").value;
-console.log(o);
-    
+<input type="text" id="dom"><br>
+<button id="save">data save</button>
 
-console.log("anis");
+   <script>
 
+//    function repot(){
+//     let x = document.getElementById('to').value
+//     console.log(x);
+//     document.getElementById('demo').innerText= x
+// }
 
+//data save//
 
-    // document.getElementById("result").innerHTML= "i am anis";
-   
-    
-    
-    </script>
+document.getElementById('save').addEventListener('click',
+function(){ 
+  const s= document.getElementById('dom').value;
+ 
+  localStorage[document.getElementById('dom2').value]=s;
+})
+</script>
+
 </body>
 </html>
