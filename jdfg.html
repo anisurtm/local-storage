@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+dom2 <br>
+<input type="text" id="dom2"><br><br>
+
+<input type="text" id="dom"><br>
+<button id="save">data save</button>
+
+   <script>
+
+//    function repot(){
+//     let x = document.getElementById('to').value
+//     console.log(x);
+//     document.getElementById('demo').innerText= x
+// }
+
+//data save//
+
+document.getElementById('save').addEventListener('click',
+function(){ 
+  const s= document.getElementById('dom').value;
+ 
+  localStorage[document.getElementById('dom2').value]=s;
+})
+</script>
+
+</body>
+</html>
